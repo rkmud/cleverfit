@@ -1,15 +1,15 @@
-import { Layout, Card, Space, Anchor } from 'antd';
+import { Layout, Card, Space, Button } from 'antd';
 import React from 'react';
 const { Meta } = Card;
 import styles from './FooterBlock.module.scss';
 import { AndroidFilled, AppleFilled } from '@ant-design/icons';
 const { Footer } = Layout;
-const { Link } = Anchor;
+
 
 export const FooterBlock: React.FC = () => {
     return (
         <Footer className={styles.footer}>
-            <Link href='#' title='Смотреть отзывы'></Link>
+            <Button href='#' >Смотреть отзывы</Button>
             <Card
                 actions={[
                     <Space>

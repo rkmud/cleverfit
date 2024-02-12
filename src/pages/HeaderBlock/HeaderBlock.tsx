@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Layout, Typography, Breadcrumb } from 'antd';
+import { Layout, Typography, Breadcrumb, Button } from 'antd';
 import { SettingOutlined } from '@ant-design/icons';
 import styles from './HeaderBlock.module.scss';
 const { Title } = Typography;
@@ -16,9 +15,10 @@ export const HeaderBlock: React.FC = () => {
                     Приветствуем тебя в CleverFit — приложении,
                     <br /> которое поможет тебе добиться своей мечты!
                 </Title>
-                <Link to='/'>
-                    <SettingOutlined /> <p>Настройки</p>
-                </Link>
+                <Button>
+                    <SettingOutlined /> 
+                    Настройки
+                </Button>
             </div>
         </Header>
     );

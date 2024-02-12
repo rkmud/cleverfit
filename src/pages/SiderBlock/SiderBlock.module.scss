@@ -28,6 +28,10 @@
             margin: 44px 0 58px 29px;
             width: 133px;
             height: 33px;
+
+            &-img {
+                cursor: pointer;
+            }
             @media (max-width: 576px) {
                 margin: 16px 0 14px 17px;
                 width: 72px;

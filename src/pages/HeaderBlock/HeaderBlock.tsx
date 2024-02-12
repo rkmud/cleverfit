@@ -11,7 +11,7 @@ export const HeaderBlock: React.FC = () => {
                 <Breadcrumb.Item>Главная</Breadcrumb.Item>
             </Breadcrumb>
             <div className={styles.headerWrapper}>
-                <Title>
+                <Title> 
                     Приветствуем тебя в CleverFit — приложении,
                     <br /> которое поможет тебе добиться своей мечты!
                 </Title>

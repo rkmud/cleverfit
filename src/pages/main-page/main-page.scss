@@ -1,0 +1,9 @@
+@import 'antd/dist/antd.css';
+@import 'variable.scss';
+#root {
+    position: relative;
+    width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+}

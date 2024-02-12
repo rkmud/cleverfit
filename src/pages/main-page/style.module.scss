@@ -1,0 +1,23 @@
+@import 'antd/dist/antd.css';
+@import 'variable.scss';
+
+.app {
+    height: 100vh;
+    :global {
+        .ant-layout {
+            background-image: url('/pageImage.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: right;
+            width: 100%;
+            min-height: 100vh;
+            position: relative;
+            background-attachment: fixed;
+        }
+    }
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}

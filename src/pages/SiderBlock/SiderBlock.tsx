@@ -27,11 +27,7 @@ export const SiderBlock: React.FC = () => {
                 width={208}
                 onBreakpoint={onBreakpoint}
             >
-<<<<<<< HEAD
-                {collapsed ? <Image src={logoMin} alt='' /> : <Image src={logo} />}
-=======
                 {collapsed ? <Image src={logoMin} alt='' preview={false}/> : <Image src={logo} preview={false}/>}
->>>>>>> 559b5a7 (sprint_1)
 
                 <MenuBlock />
                 <Button

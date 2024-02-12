@@ -9,7 +9,7 @@ const { Footer } = Layout;
 export const FooterBlock: React.FC = () => {
     return (
         <Footer className={styles.footer}>
-            <Button href='#' >Смотреть отзывы</Button>
+            <Button>Смотреть отзывы</Button>
             <Card
                 actions={[
                     <Space>

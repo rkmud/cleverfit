@@ -16,8 +16,7 @@ export const HeaderBlock: React.FC = () => {
                     <br /> которое поможет тебе добиться своей мечты!
                 </Title>
                 <Button>
-                    <SettingOutlined /> 
-                    Настройки
+                    <SettingOutlined />  Настройки
                 </Button>
             </div>
         </Header>

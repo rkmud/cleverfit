@@ -32,10 +32,10 @@ export const Registration = () => {
     const validatePassword = (rule, value) => {
         if (value && value.length >= 8) {
             if (/\d/.test(value) && /[a-z]/.test(value) && /[A-Z]/.test(value)) {
-                //return Promise.resolve();
+                return Promise.resolve();
             }
         }
-        //return Promise.reject('Пароль не менее 8 символов, с заглавной буквой и цифрой');
+        return Promise.reject('Пароль не менее 8 символов, с заглавной буквой и цифрой');
     };
 
     return loading ? (

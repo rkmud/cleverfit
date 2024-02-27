@@ -1,0 +1,178 @@
+@import '../../assets/variable/variable.scss';
+@import 'antd/dist/antd.css';
+
+.registForm {
+    :global {
+        .ant-form-item-has-error .ant-form-item-label {
+            height: 40px;
+            border-bottom: 1px solid var(--character-light-error);
+            border-left: 1px solid var(--character-light-error);
+            border-top: 1px solid var(--character-light-error);
+        }
+        .ant-form-item {
+            margin: 0;
+        }
+        @media (max-width: 600px) {
+        }
+    }
+}
+.regist {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 38px;
+}
+.item {
+    :global {
+        .ant-row {
+            height: 56px;
+        }
+        .ant-input-affix-wrapper {
+            height: 40px;
+            padding: 10px 12px;
+        }
+        .ant-form-item-explain {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+        .ant-form-item-explain-error {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.3;
+            text-align: left;
+            color: var(--character-light-error);
+            height: 16px;
+        }
+
+        .anticon-eye {
+            color: var(--primary-light-6);
+        }
+        .wrapper-focused,
+        .ant-input-affix-wrapper-focused,
+        .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover,
+        .ant-input-password-visibility-icon-clicked {
+            border-color: var(--primary-light-5);
+        }
+        .ant-form-item-extra {
+            display: flex;
+            align-items: center;
+            height: 16px;
+        }
+    }
+}
+
+.mail {
+    :global {
+        .ant-row {
+            height: 56px;
+        }
+        .ant-input {
+            height: 40px;
+            border-radius: 0 2px 2px 0;
+            border-left: none;
+        }
+        .ant-form-item {
+            width: 100%;
+        }
+        .ant-form-item-explain-error {
+            display: none;
+        }
+        .ant-form-item-label
+            > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+            display: none;
+        }
+        .ant-form-item-label > label::after {
+            margin: 0;
+        }
+        .ant-form-item-required {
+            background: var(--character-light-table-header);
+            border: 1px solid var(--character-light-border);
+            border-radius: 2px 0 0 2px;
+            padding: 0px 12px;
+            width: 71px;
+            height: 40px;
+        }
+
+        .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input {
+            border-bottom: 1px solid var(--character-light-error);
+            border-right: 1px solid var(--character-light-error);
+            border-top: 1px solid var(--character-light-error);
+            border-left: none;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+        .ant-input-group-addon:first-child {
+            background: var(--character-light-table-header);
+            border-bottom: 1px solid var(--character-light-border);
+            border-left: 1px solid var(--character-light-border);
+            border-top: 1px solid var(--character-light-border);
+            border-radius: 2px 0 0 2px;
+            padding: 0px 12px;
+        }
+        .ant-input-group-wrapper-status-error .ant-input-group-addon {
+            color: var(--character-light-title-85);
+            background: var(--character-light-table-header);
+            border-bottom: 1px solid var(--character-light-error);
+            border-left: 1px solid var(--character-light-error);
+            border-top: 1px solid var(--character-light-error);
+        }
+    }
+}
+.password {
+    height: 70px;
+    :global {
+        .ant-form-item-explain {
+            display: flex;
+            align-items: center;
+            text-align: left;
+        }
+    }
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.button {
+    :global {
+        .ant-btn {
+            border: 1px solid var(--primary-light-6);
+            border-radius: 2px;
+            padding: 6px 15px;
+            width: 100%;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.3;
+            height: 40px;
+            box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.04);
+            background: var(--primary-light-6);
+        }
+        .ant-btn-primary[disabled] {
+            box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.02);
+            background: var(--character-light-background);
+            border: 1px solid var(--character-light-border);
+            border-radius: 2px;
+        }
+    }
+}
+.btnRegist {
+    :global {
+        .ant-btn {
+            border: 1px solid var(--character-light-border);
+            border-radius: 2px;
+            width: 100%;
+            height: 40px;
+            box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.02);
+            background: var(--character-light-primary-inverse);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.3;
+            text-align: center;
+            color: var(--character-light-title-85);
+        }
+    }
+}

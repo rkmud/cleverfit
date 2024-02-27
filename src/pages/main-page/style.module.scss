@@ -1,12 +1,11 @@
 @import 'antd/dist/antd.css';
-@import 'variable.scss';
+@import '../../assets/variable/variable.scss';
 
 .app {
-
     min-height: 100vh;
     :global {
         .ant-layout {
-            background-image: url('/pageImage.svg');
+            background-image: url('../../assets/images/pageImage.svg');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: right;

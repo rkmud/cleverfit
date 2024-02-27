@@ -1,0 +1,14 @@
+#root {
+    background-image: url('../../assets/images/backPage.svg');
+    background-size: cover;
+    backdrop-filter: blur(12px);
+    min-height: 100vh;
+    max-width: 1440px;
+}
+.form {
+    backdrop-filter: blur(12px);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

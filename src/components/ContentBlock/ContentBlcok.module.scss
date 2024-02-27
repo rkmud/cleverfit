@@ -1,0 +1,125 @@
+@import 'antd/dist/antd.css';
+@import '../../assets/variable/variable.scss';
+.container {
+    max-width: 752px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 24px;
+
+    :global {
+        .ant-col {
+            text-align: left;
+        }
+        .ant-col-24 {
+            padding: 24px;
+            padding-right: 60px;
+
+            @media (max-width: 931px) {
+                padding: 24px;
+            }
+            @media (max-width: 576px) {
+                padding: 16px;
+            }
+        }
+        @media (max-width: 576px) {
+            margin: 24px 15px;
+        }
+    }
+}
+.list {
+    margin-bottom: 24px;
+    background: #fff;
+
+    :global {
+        .ant-list {
+            font-size: 16px;
+            letter-spacing: 0.3px;
+            line-height: 20.8px;
+            color: var(--primary-light-9);
+        }
+        .ant-list-item {
+            color: var(--primary-light-9);
+            border: none;
+            padding: 0;
+        }
+    }
+}
+.description {
+    margin-bottom: 16px;
+    background: #fff;
+
+    :global {
+        .ant-typography {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 26px;
+            color: var(--character-light-title-85);
+            letter-spacing: 0.6px;
+        }
+    }
+}
+.cards {
+    display: flex;
+    background: transparent;
+    :global {
+        .ant-card-head {
+            padding: 0;
+        }
+        .ant-card-head-title {
+            overflow: auto;
+            white-space: normal;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20.8px;
+            color: var(--character-light-title-85);
+            text-align: left;
+        }
+        .ant-card-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--primary-light-6);
+            text-align: center;
+            padding: 19px 0;
+            cursor: pointer;
+        }
+        .ant-card-meta {
+            display: flex;
+            align-items: center;
+            color: var(--primary-light-6);
+        }
+        .ant-card-meta-avatar {
+            padding-right: 8px;
+            display: flex;
+            align-items: center;
+            svg {
+                max-width: 12px;
+                max-height: 12px;
+            }
+        }
+
+        .ant-card-meta-title {
+            color: var(--primary-light-6);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18.2px;
+        }
+        .ant-avatar {
+            border-radius: 0;
+            width: 16px;
+            height: 16px;
+        }
+        .ant-avatar > img {
+            display: block;
+            width: 16px;
+            height: 16px;
+        }
+        @media (max-width: 576px) {
+            .ant-card-head-title {
+                text-align: center;
+            }
+        }
+    }
+}
